@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Card from '../components/Card'
 import Footer from '../components/Footer'
+
+import Image from 'next/image';
+import GrandpaPic from '../public/img/grandpa.jpeg'
 
 export default function Home() {
   return (
@@ -14,13 +18,19 @@ export default function Home() {
       <header>
         <Header />
       </header>
-      <main>
-        
-        
-       
 
-
-        
+      <main className="flex">
+        <Card 
+          details={{
+            img: <Image src={GrandpaPic} alt="Grandpa Pic" layout="responsive" />
+          }}
+          />
+        <Card 
+          details={{
+            title: "Bio",
+            body: "Look at all the text I can put here wow there are so many possibilities for things amazing"
+          }}
+          />
       </main>
 
       <footer> 
