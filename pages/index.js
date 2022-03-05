@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Header from '../components/Header'
+import Card from '../components/Card'
 import Footer from '../components/Footer'
+
+import Image from 'next/image';
+import GrandpaPic from '../public/img/grandpa.jpeg'
 
 export default function Home() {
   return (
@@ -17,10 +21,22 @@ export default function Home() {
       <header>
         <Header />
       </header>
-      <main>
 
 
-        <div className='w-full flex flex-col sm:flex-row p-2'>
+      <main className="flex">
+        <Card 
+          details={{
+            img: <Image src={GrandpaPic} alt="Grandpa Pic" layout="responsive" />
+          }}
+          />
+        <Card 
+          details={{
+            title: "Bio",
+            body: "Look at all the text I can put here wow there are so many possibilities for things amazing"
+          }}
+          />
+
+  <div className='w-full flex flex-col sm:flex-row p-2'>
           <div className='w-full sm:w-1/2 p-3 pt-28'>
             <h3 className='text-center text-2xl'>Duane's 90th Birthday Party</h3>
             <p className='text-center text-lg'>When: March 26th, 2022</p>
