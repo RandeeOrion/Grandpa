@@ -7,7 +7,7 @@ export default function Card(props){
   }
 
   return(
-    <div className="bg-orange-200 w-1/2 h-80 overflow-hidden">
+    <div className="w-full sm:w-1/2  h-80 overflow-hidden">
 
       {details.title ? <h2 className={styles.title}>{details.title}</h2> : null}
 
