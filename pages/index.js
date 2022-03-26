@@ -21,8 +21,8 @@ export default function Home() {
       </header>
 
 
-      <main >
-        <div className='w-full h- flex flex-col sm:flex-row p-2'>
+      <main className='flex min-h-screen' >
+        <div className='w-full h- flex flex-col sm:flex-row p-2 flex-grow'>
         <Card 
           details={{
             img: <div className=" w-full mx-12 "><Image src={GrandpaPic} alt="Grandpa Pic"
@@ -32,23 +32,13 @@ export default function Home() {
           />
         <Card 
           details={{
-            title: "Bio",
-            body: "Look at all the text I can put here wow there are so many possibilities for things amazing"
+          
+            body: "Duane was born in 1932 and what a rich life he has lived so far! He attended college at WSU then after joined the Coast Guard where he met his Lady Bird, Donna. Through the Coast Guard he served his country in the Korean war. After he came home he built an electronics repair company and started a family with Donna. They had three babes, who had more babes, who had more still. With a total of 12 grandchildren and 22 great grandchildren, one could say Duane has built a rather large legacy of love. And a fair few motorcycle riders. He is still at work every morning before 6 am and and flags every summer at Mt Baker Motorcycle Club. He loves a good card game, especially if his Lady Bird wins, and watching his great grand babies play in the lake. "
           }}
           />
           </div>
 
-  <div className='w-full flex flex-col sm:flex-row p-2'>
-          <div className='w-full sm:w-1/2 p-3 pt-28'>
-            <h3 className='text-center text-2xl'>Duane&#39;s 90th Birthday Party</h3>
-            <p className='text-center text-lg'>When: March 26th, 2022</p>
-            <p className='text-center text-lg'>Where: Diana and Dana&#39;s 714 E Pole Rd</p>
-          </div>
-
-          <div className='w-full sm:w-1/2 p-3'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.1422774287917!2d-122.45553464955289!3d48.89362560607875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485b0a6f6b98f27%3A0xa421e08b12c4f865!2s714%20E%20Pole%20Rd%2C%20Lynden%2C%20WA%2098264!5e0!3m2!1sen!2sus!4v1646516437236!5m2!1sen!2sus" className="w-full h-80  " allowFullScreen="" loading="lazy"></iframe></div>
-        </div>
-
+  
       </main>
 
       <footer>
